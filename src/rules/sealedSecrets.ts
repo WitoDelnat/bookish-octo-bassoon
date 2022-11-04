@@ -1,7 +1,7 @@
 import { defineRule } from "@monokle/validation/custom";
 
-export const sealedSecrets = defineRule("RCA003", {
-  name: "sealed-secrets",
+export const sealedSecrets = defineRule({
+  id: "RCA003",
   description: "Disallow default Kubernetes secrets.",
   fullDescription:
     "Kubernetes secrets are base64 encoded and you can easily retrieve the secret value. Instead you should use a SealedSecret which encrypts the secret so that it can safely be committed to your repository.",

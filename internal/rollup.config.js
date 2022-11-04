@@ -3,10 +3,10 @@ import { terser } from "rollup-plugin-terser";
 
 export default [
   {
-    input: "build/main.js",
+    input: "./build/plugin.js",
     output: [
       {
-        file: "plugin.js",
+        file: "./dist/plugin.js",
         format: "esm",
       },
     ],

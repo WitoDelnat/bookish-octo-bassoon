@@ -1,3 +1,6 @@
-node_modules
-build
 .DS_Store
+build
+dist
+node_modules
+src/crds/__generated__/**
+internal/server.cjs
